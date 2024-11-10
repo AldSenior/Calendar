@@ -1,0 +1,131 @@
+/* src/Calendar.css */
+
+body {
+	font-family: Arial, sans-serif;
+	width: 100vw;
+	height: 100vh;
+}
+.App {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background-color: #f0f0f0;
+}
+.FullCalendar {
+	display: flex;
+	flex-direction: row;
+}
+.calendar {
+	border-end-end-radius: 32px;
+	border-start-end-radius: 32px;
+	background-color: #373d4d;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 650px;
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#monthYear {
+	margin: 0;
+}
+
+.days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 5px;
+}
+
+.day_name {
+	width: 64px;
+	text-align: center;
+	align-items: center;
+}
+
+.dates {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 5px;
+}
+
+.date {
+	height: 64px;
+	width: 64px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-align: center;
+	align-items: center;
+	border-radius: 32px;
+	cursor: pointer;
+}
+
+.date:hover {
+	background-color: #e0e0e0;
+}
+
+.today {
+	background-color: #5085ff; /* Цвет для выделения текущего дня */
+	color: white; /* Цвет текста для лучшей читаемости */
+	height: 64px;
+	width: 64px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-align: center;
+	align-items: center;
+	border-radius: 32px;
+}
+.nonCurrentMonth {
+	height: 64px;
+	width: 64px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-align: center;
+	align-items: center;
+	border-radius: 5px;
+	color: darkgray;
+}
+button {
+	background-color: #373d4d;
+	border: none;
+	width: 36px;
+	height: 36px;
+	svg {
+		width: 36px;
+		height: 36px;
+	}
+}
+.LeftDateKysok {
+	border-end-start-radius: 32px;
+	border-start-start-radius: 32px;
+	width: 650px;
+	height: 650px;
+	background-color: #5085ff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.DateKysokBykvi {
+		width: 70%;
+		height: 70%;
+		text-align: center;
+		h3 {
+			font-size: 64px;
+		}
+		p {
+			font-size: 360px;
+		}
+	}
+}
